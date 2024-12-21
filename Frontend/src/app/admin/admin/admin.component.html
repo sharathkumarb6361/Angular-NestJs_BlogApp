@@ -1,0 +1,66 @@
+  <div class="grid-container">
+    
+    <!-- Header -->
+    <!-- Header -->
+<header class="header">
+  <div class="header-left">
+    <span class="material-icons-outlined"></span>
+  </div>
+  <div class="header-right">
+    <p class="header-name"></p>
+    <p class="header-email"></p>
+  </div>
+</header>
+<!-- End Header -->
+    <!-- End Header -->
+    
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+           Admin Panel
+        </div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+      </div>
+
+      <!-- Dashboard -->
+      <ul class="sidebar-list">
+        
+
+        <!-- Manage Users -->
+        <li class="sidebar-list-item">
+          <a target="_blank">
+            Manage Users
+          </a>
+          <!-- Dropdown for Update and Delete Users -->
+          <ul class="submenu">
+           <li> <a routerLink="/adduser" routerLinkActive="active"> Add Users</a></li>
+            <li><a routerLink="/updateuser" routerLinkActive="active"> Update User</a></li>
+            <li><a routerLink="/deleteUser" routerLinkActive="active"> Delete User</a></li>
+            <li><a routerLink="/addimg" routerLinkActive="active"> Add profile image</a></li>
+          </ul>
+        </li>
+
+        <!-- Manage Blogs -->
+        <li class="sidebar-list-item">
+          <a routerLink="/manageBlog" routerLinkActive="active">
+             Manage Blogs
+          </a>
+        </li>
+
+        <!-- Manage Magazines -->
+        <li class="sidebar-list-item">
+          <a href="#" target="_blank">
+             Manage Magazines
+          </a>
+        </li>
+
+        <!-- Logout -->
+        <li class="sidebar-list-item" (click)="logout()">
+          <a >Logout</a>
+        </li>
+      </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+<router-outlet></router-outlet>

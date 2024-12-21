@@ -1,0 +1,99 @@
+<app-admin></app-admin>
+<div class="main2-cards">
+  <h2>Add User</h2>
+  <form id="AddUser" #form="ngForm" (ngSubmit)="submitForm(form.value)">
+    <div id="form-container">
+      <div id="form-inner">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          required
+          ngModel
+        />
+
+        <label for="usn">USN:</label>
+        <input
+          type="text"
+          id="regno"
+          name="regno"
+          placeholder="Enter USN"
+          required
+          ngModel
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+          ngModel
+        />
+
+        <label for="branch">Branch:</label>
+        <input
+          type="text"
+          id="branch"
+          name="branch"
+          placeholder="Enter branch"
+          required
+          ngModel
+        />
+      </div>
+      <div id="form-inner">
+        <label for="sem">Sem:</label>
+        <input
+          type="text"
+          id="sem"
+          name="sem"
+          placeholder="Enter sem"
+          required
+          ngModel
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          placeholder="Enter Date of Birth"
+          required
+          ngModel
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email"
+          required
+          ngModel
+        />
+
+        <label for="role">Role:</label>
+        <input
+          type="text"
+          id="role"
+          name="role"
+          placeholder="Enter role"
+          required
+          ngModel
+        />
+
+        <button
+          [disabled]="form.invalid"
+          type="submit"
+          class="update-btn"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>

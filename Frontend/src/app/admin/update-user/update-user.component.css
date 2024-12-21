@@ -1,0 +1,56 @@
+.main2-cards {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-top: -550px;
+    opacity: 1; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 30%;
+
+  }
+  
+  .main2-cards h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .main2-cards label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .main2-cards input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button{
+    height: 30px;
+    width: 100px;
+    
+    background-color:rgb(13, 228, 120);
+    color: rgb(15, 15, 15);
+    border-radius: 40px;
+  
+  }
+  button:hover{
+    background-color:rgb(4, 255, 130);
+  
+  }
+  #form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #form-inner{
+    width: 350px;
+  }

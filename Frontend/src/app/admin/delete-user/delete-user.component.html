@@ -1,0 +1,10 @@
+<app-admin></app-admin>
+<div class="main3-cards">
+    <h2>Delete User</h2>
+    <form #form="ngForm"  (ngSubmit)="deleteuser(form.value)" id="deleteForm">
+      <label for="usn">USN:</label>
+      <input type="text" id="usn" name="usn" placeholder="Enter  USN" required ngModel>
+      <button type="submit"  class="delete-btn">Delete</button>
+    </form>
+  </div>
+  <router-outlet></router-outlet>

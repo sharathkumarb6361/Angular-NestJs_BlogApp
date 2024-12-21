@@ -1,0 +1,18 @@
+<app-admin></app-admin>
+<div id="container">
+    <h1 align="center" style="margin: 20px;"> Blogs</h1>
+<div id="mng-container" *ngFor="let blog of res?.data">
+    <div id="blog-in" >
+        <h3>{{blog.title}}</h3>
+
+        <div class="blog-wrapper">
+           <div class="blog-content" [innerHTML]="blog.blog"></div>
+           
+          </div>
+       </div>
+       
+       <button (click)="deleteBlog(blog.Blog_id)">Delete Blog</button>
+</div>
+</div>
+
+<router-outlet></router-outlet>

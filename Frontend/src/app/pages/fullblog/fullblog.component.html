@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="full-blog-container">
+  <div *ngIf="blog.data" >
+    <div id="inner-container">
+   
+  
+   <div class="blog-wrapper">
+   
+    <div id="author">
+      <h2>{{blog.data.title}}</h2>
+      <h5>{{blog.data.profile.name}}</h5>
+      <h6>{{blog.data.profile.regno}}</h6>
+      <h6>{{blog.data.profile.branch}}</h6>
+    </div>
+ 
+    <div class="blog-content1" [innerHTML]="blog.data.blog"></div>
+  
+   </div>
+     
+      
+    </div>
+  </div>
+  <hr />
+</div>
+
+<router-outlet></router-outlet>

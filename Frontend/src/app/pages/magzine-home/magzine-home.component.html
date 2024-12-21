@@ -1,0 +1,12 @@
+<app-navbar></app-navbar><div id="container" >
+    <div *ngFor="let item of magzine">
+        <div id="inner-container">
+            <img src="https://www.google.com/imgres?q=placeholder%20image&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F65%2FNo-Image-Placeholder.svg%2F832px-No-Image-Placeholder.svg.png&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANo-Image-Placeholder.svg&docid=ldp7V-Ybx0nO3M&tbnid=ZyHbovfk1t2cuM&vet=12ahUKEwjK0o_3m82JAxXCnmMGHZaYBdgQM3oECEUQAA..i&w=832&h=1024&hcb=2&ved=2ahUKEwjK0o_3m82JAxXCnmMGHZaYBdgQM3oECEUQAA" alt="">
+            <h3>{{item.title}}</h3>
+            <p>{{item.description}}</p>
+            <button (click)="navigateToRead(item.id)">Read</button>
+        </div>
+</div>
+
+  
+</div>

@@ -1,0 +1,13 @@
+<div>
+  <app-navbar></app-navbar>
+  <h2>Write a Blog</h2>
+
+  
+  <p-editor id="editor" [(ngModel)]="text" name="text" [style]="{ height: '320px' }"></p-editor>
+
+  <p-toast />
+  <button (click)="submitBlog()">Submit Blog</button>
+
+  <hr />
+
+</div>

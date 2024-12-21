@@ -1,0 +1,41 @@
+<div id="nav-container">
+  <div id="logo">
+    <img
+      src="https://sjec.ac.in/storage/config/1718876544_6673f9807e469.png"
+      alt=""
+      srcset=""
+    />
+  </div>
+  <div id="menu">
+    <nav>
+      <ul>
+        <li><a routerLink="/home" routerLinkActive="active" > Home</a> </li>
+        <li><a routerLink="/readBlog" routerLinkActive="active">Blogs</a></li>
+        <li><a routerLink="/write" routerLinkActive="active">Write</a></li>
+        <li><a  routerLink="/magList" routerLinkActive="active">Magzines</a></li>
+        
+        <li>  <a (click)="sidebarVisible2 = true">Profile</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<p-sidebar [(visible)]="sidebarVisible2" position="right">
+  <div id="side">
+    <img [src]="info.imageUrl" alt="">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item"> <h3>{{name}}</h3></li>
+      <li class="sidebar-list-item"> <h4>Reg.No :{{reg_num}}</h4></li>
+      <li class="sidebar-list-item"><h4>Branch :{{branch}}</h4></li>
+
+<li class="sidebar-list-item"> <a (click)="nav(profid)">My Blogs</a></li>
+      <li class="sidebar-list-item"><a routerLink="/" routerLinkActive="active">Log Out</a></li>
+    </ul>
+    
+   
+   
+    
+  </div>  
+
+</p-sidebar>
+<router-outlet></router-outlet>

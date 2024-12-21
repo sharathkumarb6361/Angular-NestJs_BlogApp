@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div id="container">
+  <div *ngFor="let post of data1?.data">
+    <div  (click)="navigateToBlog(post.Blog_id)">
+     <div >
+         <div id="inner-container">
+           <img id="image1" src="{{post.image}}" alt="" srcset="">
+           <h2>{{ post.title }}</h2>
+       
+        <div class="blog-wrapper">
+         <div class="blog-content" [innerHTML]="post.blog"></div>
+ 
+        </div>
+          
+ 
+         </div>
+ </div >
+ </div>
+   </div>
+</div>
+  
+  
+  
+

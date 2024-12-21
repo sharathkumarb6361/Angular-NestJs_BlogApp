@@ -1,0 +1,39 @@
+<div id="container">
+  <div id="in-container">
+    <div id="head">
+      <h1 [align]="center">Sign In</h1>
+    </div>
+
+    <div id="form-container">
+      <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+        <div id="form-control">
+          <label for="regno">Register No</label><br>
+          <input
+            type="text"
+            class=""
+            pInputText
+            name="regno"
+            id="regno"
+            ngModel
+            required
+          />
+          
+        </div>
+        <div id="form-control">
+          <label for="password">Password</label><br>
+
+          <input type="text" pInputText name="password" id="password" ngModel required />
+        </div>
+        <div id="form-control">
+         
+        </div>
+        <div id="sub">
+            
+         <button type="submit">Sign In</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
